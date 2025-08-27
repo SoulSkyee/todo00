@@ -223,3 +223,29 @@ body {
         text-align: center;
     }
 }
+
+/* Section Separator Styles */
+.section-separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 15px 0;
+    gap: 15px;
+}
+
+.separator-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+}
+
+.separator-text {
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+}

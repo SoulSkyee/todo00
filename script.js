@@ -124,6 +124,13 @@ class TodoApp {
             `).join('');
         }
 
+        // If no todos to display, show empty state
+        if (todoHTML.trim() === '') {
+            this.emptyState.style.display = 'block';
+            this.stats.style.display = 'none';
+            return;
+        }
+
         this.todoList.innerHTML = todoHTML;
 
         // Update stats
