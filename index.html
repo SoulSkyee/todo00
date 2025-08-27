@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Zhafran's To-Do List</h1>
+            <p>Project To-Do List</p>
+        </div>
+        
+        <div class="todo-input">
+            <div class="input-container">
+                <input type="text" id="todoInput" placeholder="Tambahkan tugas baru..." maxlength="100">
+                <button id="addBtn">+ Tambah</button>
+            </div>
+        </div>
+        
+        <div class="todo-list" id="todoList">
+            <div class="empty-state" id="emptyState">
+                <div style="font-size: 4rem; margin-bottom: 20px;">📋</div>
+                <h3>Belum ada tugas</h3>
+                <p>Tambahkan tugas pertama Anda!</p>
+            </div>
+        </div>
+        
+        <div class="stats" id="stats" style="display: none;">
+            <span id="taskCount">0 tugas</span>
+            <button class="clear-completed" id="clearCompleted">Hapus yang Selesai</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
