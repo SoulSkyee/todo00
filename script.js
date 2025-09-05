@@ -50,7 +50,7 @@ class TodoApp {
     deleteTodo(id) {
         this.todos = this.todos.filter(t => t.id !== id);
         this.saveTodos();
-        this.render();
+        this.render()
     }
 
     clearCompletedTodos() {
@@ -175,7 +175,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const sampleTodos = [
             { id: 1, text: "Belajar HTML, CSS, dan JavaScript", completed: false, createdAt: new Date().toISOString() },
             { id: 2, text: "Membuat to-do list yang keren", completed: true, createdAt: new Date().toISOString() },
-            { id: 3, text: "Latihan coding setiap hari", completed: false, createdAt: new Date().toISOString() }
+            { id: 3, text: "Latihan coding setiap hari", completed: false, createdAt: new Date().toISOString() },
+            { id: 4, text: "Test tugas baru", completed: false, createdAt: new Date().toISOString() }
         ];
         app.todos = sampleTodos;
         app.saveTodos();
