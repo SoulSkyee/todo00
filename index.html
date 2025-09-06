@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple To-Do List</title>
+    <title>Zhafran To Do-List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>📝 Zhafran's To-Do List</h1>
-            <p>Project To-Do todo-list</p>
+            <p>Website untuk tracking akttivitas!</p>
         </div>
         
         <div class="todo-input">
             <div class="input-container">
                 <input type="text" id="todoInput" placeholder="Tambahkan tugas baru..." maxlength="100">
+                <select id="prioritySelect" class="priority-select">
+                    <option value="low">🟢 Rendah</option>
+                    <option value="medium" selected>🟡 Sedang</option>
+                    <option value="high">🔴 Tinggi</option>
+                </select>
                 <button id="addBtn">+ Tambah</button>
             </div>
         </div>
